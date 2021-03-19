@@ -1,0 +1,8 @@
+import math
+print("请输入1个三位数：")
+num = int(input())
+if num == math.pow((num // 100), 3) + math.pow((num // 10 % 10), 3) + math.pow((num % 10), 3):
+    print("是水仙花数")
+else:
+    print("不是水仙花数")
+
