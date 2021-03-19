@@ -1,0 +1,1 @@
+print("agit pull --rebase")
