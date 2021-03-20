@@ -1,0 +1,269 @@
+Index: qc Creator/MainWinsingelSlot.ui
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- qc Creator/MainWinsingelSlot.ui	(date 1616233038463)
++++ qc Creator/MainWinsingelSlot.ui	(date 1616233038463)
+@@ -0,0 +1,130 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<ui version="4.0">
++ <class>MainWindow</class>
++ <widget class="QMainWindow" name="MainWindow">
++  <property name="geometry">
++   <rect>
++    <x>0</x>
++    <y>0</y>
++    <width>465</width>
++    <height>383</height>
++   </rect>
++  </property>
++  <property name="windowTitle">
++   <string>MainWindow</string>
++  </property>
++  <widget class="QWidget" name="centralwidget">
++   <widget class="QPushButton" name="pushButton_4">
++    <property name="geometry">
++     <rect>
++      <x>310</x>
++      <y>270</y>
++      <width>89</width>
++      <height>25</height>
++     </rect>
++    </property>
++    <property name="text">
++     <string>退出</string>
++    </property>
++   </widget>
++   <widget class="QWidget" name="">
++    <property name="geometry">
++     <rect>
++      <x>50</x>
++      <y>80</y>
++      <width>219</width>
++      <height>186</height>
++     </rect>
++    </property>
++    <layout class="QGridLayout" name="gridLayout_2">
++     <item row="0" column="0">
++      <layout class="QVBoxLayout" name="verticalLayout">
++       <item>
++        <widget class="QPushButton" name="pushButton_2">
++         <property name="text">
++          <string>PushButton</string>
++         </property>
++        </widget>
++       </item>
++       <item>
++        <widget class="QDialogButtonBox" name="buttonBox">
++         <property name="standardButtons">
++          <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
++         </property>
++        </widget>
++       </item>
++       <item>
++        <widget class="QPushButton" name="pushButton">
++         <property name="text">
++          <string>PushButton</string>
++         </property>
++        </widget>
++       </item>
++       <item>
++        <widget class="QPushButton" name="pushButton_3">
++         <property name="text">
++          <string>PushButton</string>
++         </property>
++        </widget>
++       </item>
++      </layout>
++     </item>
++     <item row="1" column="0">
++      <layout class="QGridLayout" name="gridLayout">
++       <item row="0" column="0">
++        <widget class="QLabel" name="label">
++         <property name="text">
++          <string>TextLabel</string>
++         </property>
++        </widget>
++       </item>
++       <item row="0" column="1">
++        <widget class="QLineEdit" name="lineEdit"/>
++       </item>
++       <item row="1" column="0">
++        <widget class="QLabel" name="label_2">
++         <property name="text">
++          <string>TextLabel</string>
++         </property>
++        </widget>
++       </item>
++       <item row="1" column="1">
++        <widget class="QLineEdit" name="lineEdit_2"/>
++       </item>
++      </layout>
++     </item>
++    </layout>
++   </widget>
++  </widget>
++  <widget class="QMenuBar" name="menubar">
++   <property name="geometry">
++    <rect>
++     <x>0</x>
++     <y>0</y>
++     <width>465</width>
++     <height>28</height>
++    </rect>
++   </property>
++  </widget>
++  <widget class="QStatusBar" name="statusbar"/>
++ </widget>
++ <resources/>
++ <connections>
++  <connection>
++   <sender>pushButton_4</sender>
++   <signal>clicked()</signal>
++   <receiver>MainWindow</receiver>
++   <slot>close()</slot>
++   <hints>
++    <hint type="sourcelabel">
++     <x>364</x>
++     <y>308</y>
++    </hint>
++    <hint type="destinationlabel">
++     <x>327</x>
++     <y>164</y>
++    </hint>
++   </hints>
++  </connection>
++ </connections>
++</ui>
+Index: qc Creator/MainWinsingelSlot.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- qc Creator/MainWinsingelSlot.py	(date 1616233051275)
++++ qc Creator/MainWinsingelSlot.py	(date 1616233051275)
+@@ -0,0 +1,80 @@
++# -*- coding: utf-8 -*-
++
++# Form implementation generated from reading ui file 'MainWinsingelSlot.ui'
++#
++# Created by: PyQt5 UI code generator 5.14.1
++#
++# WARNING! All changes made in this file will be lost!
++
++
++from PyQt5 import QtCore, QtGui, QtWidgets
++
++
++class Ui_MainWindow(object):
++    def setupUi(self, MainWindow):
++        MainWindow.setObjectName("MainWindow")
++        MainWindow.resize(465, 383)
++        self.centralwidget = QtWidgets.QWidget(MainWindow)
++        self.centralwidget.setObjectName("centralwidget")
++        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
++        self.pushButton_4.setGeometry(QtCore.QRect(310, 270, 89, 25))
++        self.pushButton_4.setObjectName("pushButton_4")
++        self.widget = QtWidgets.QWidget(self.centralwidget)
++        self.widget.setGeometry(QtCore.QRect(50, 80, 219, 186))
++        self.widget.setObjectName("widget")
++        self.gridLayout_2 = QtWidgets.QGridLayout(self.widget)
++        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
++        self.gridLayout_2.setObjectName("gridLayout_2")
++        self.verticalLayout = QtWidgets.QVBoxLayout()
++        self.verticalLayout.setObjectName("verticalLayout")
++        self.pushButton_2 = QtWidgets.QPushButton(self.widget)
++        self.pushButton_2.setObjectName("pushButton_2")
++        self.verticalLayout.addWidget(self.pushButton_2)
++        self.buttonBox = QtWidgets.QDialogButtonBox(self.widget)
++        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
++        self.buttonBox.setObjectName("buttonBox")
++        self.verticalLayout.addWidget(self.buttonBox)
++        self.pushButton = QtWidgets.QPushButton(self.widget)
++        self.pushButton.setObjectName("pushButton")
++        self.verticalLayout.addWidget(self.pushButton)
++        self.pushButton_3 = QtWidgets.QPushButton(self.widget)
++        self.pushButton_3.setObjectName("pushButton_3")
++        self.verticalLayout.addWidget(self.pushButton_3)
++        self.gridLayout_2.addLayout(self.verticalLayout, 0, 0, 1, 1)
++        self.gridLayout = QtWidgets.QGridLayout()
++        self.gridLayout.setObjectName("gridLayout")
++        self.label = QtWidgets.QLabel(self.widget)
++        self.label.setObjectName("label")
++        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
++        self.lineEdit = QtWidgets.QLineEdit(self.widget)
++        self.lineEdit.setObjectName("lineEdit")
++        self.gridLayout.addWidget(self.lineEdit, 0, 1, 1, 1)
++        self.label_2 = QtWidgets.QLabel(self.widget)
++        self.label_2.setObjectName("label_2")
++        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
++        self.lineEdit_2 = QtWidgets.QLineEdit(self.widget)
++        self.lineEdit_2.setObjectName("lineEdit_2")
++        self.gridLayout.addWidget(self.lineEdit_2, 1, 1, 1, 1)
++        self.gridLayout_2.addLayout(self.gridLayout, 1, 0, 1, 1)
++        MainWindow.setCentralWidget(self.centralwidget)
++        self.menubar = QtWidgets.QMenuBar(MainWindow)
++        self.menubar.setGeometry(QtCore.QRect(0, 0, 465, 28))
++        self.menubar.setObjectName("menubar")
++        MainWindow.setMenuBar(self.menubar)
++        self.statusbar = QtWidgets.QStatusBar(MainWindow)
++        self.statusbar.setObjectName("statusbar")
++        MainWindow.setStatusBar(self.statusbar)
++
++        self.retranslateUi(MainWindow)
++        self.pushButton_4.clicked.connect(MainWindow.close)
++        QtCore.QMetaObject.connectSlotsByName(MainWindow)
++
++    def retranslateUi(self, MainWindow):
++        _translate = QtCore.QCoreApplication.translate
++        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
++        self.pushButton_4.setText(_translate("MainWindow", "退出"))
++        self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
++        self.pushButton.setText(_translate("MainWindow", "PushButton"))
++        self.pushButton_3.setText(_translate("MainWindow", "PushButton"))
++        self.label.setText(_translate("MainWindow", "TextLabel"))
++        self.label_2.setText(_translate("MainWindow", "TextLabel"))
+Index: qc Creator/1、信号和槽.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- qc Creator/1、信号和槽.py	(date 1616232370746)
++++ qc Creator/1、信号和槽.py	(date 1616232370746)
+@@ -0,0 +1,13 @@
++"""
++信号（signal）
++槽（slot）
++是Qt的核心机制，也是PyQt的核心机制
++信号：是由对象或者控件发出去的消息
++
++当单击按钮时，按钮就会往外部发送单击的消息，这些发送出去的信号需要一些代码来拦截，这些代码就是槽
++槽本质上是一个函数或者方法
++信号可以理解为事件 槽可以理解为事件函数
++
++需要讲信号和槽绑定
++一个信号可以和多个槽绑定，一个槽可以拦截多个信号
++"""
+\ No newline at end of file
+Index: qc Creator/main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- qc Creator/main.py	(revision 3c55f05acf4881424a77b1cb08a06c470660536d)
++++ qc Creator/main.py	(date 1616233107798)
+@@ -1,11 +1,11 @@
+ import sys
+-import dem1
++import MainWinsingelSlot
+ from PyQt5.QtWidgets import QApplication, QMainWindow
+ 
+ if __name__ == "__main__":
+     app = QApplication(sys.argv)  # 创建QApplication 代表整个应用程序 固定写法
+     mainWindow = QMainWindow()  # 创建 mainWindow对象
+-    ui = dem1.Ui_MainWindow()  # 创建Ui_MainWindow类实例化
++    ui = MainWinsingelSlot.Ui_MainWindow()  # 创建Ui_MainWindow类实例化
+     ui.setupUi(mainWindow)     # 向主窗口添加控件
+     mainWindow.show()
+     sys.exit(app.exec_())      # 进入主循环
